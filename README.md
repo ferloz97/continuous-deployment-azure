@@ -1,6 +1,5 @@
 # continuous-deployment-azure
 
-
 En primer lugar, nos logueamos en el cliente de Azure (el login se realizará con ayuda del navegador) 
 ```
 az login
