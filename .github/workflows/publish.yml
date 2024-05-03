@@ -44,3 +44,5 @@ jobs:
             --image ${{ secrets.DOCKERHUB_USERNAME }}/anuncios:latest \
             --dns-name-label ais-anuncios-test-continousdeployment \
             --ports 8080
+      - name: 'Delete container'
+        run: az container delete --resource-group ${{secrets.AZURE_GROUP}} --name anuncios
