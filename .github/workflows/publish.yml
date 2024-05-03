@@ -42,5 +42,5 @@ jobs:
             --resource-group ${{ secrets.AZURE_GROUP }} \
             --name anuncios \
             --image ${{ secrets.DOCKERHUB_USERNAME }}/anuncios:latest \
-            --dns-name-label ais-anuncios \
+            --dns-name-label ais-anuncios-Test_ContinousDeployment \
             --ports 8080
